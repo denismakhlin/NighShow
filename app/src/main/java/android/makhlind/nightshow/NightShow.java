@@ -14,6 +14,6 @@ public class NightShow extends AppCompatActivity {
         setContentView(R.layout.activity_night_show);
 
         answerText = (TextView) findViewById(R.id.answerText);
-        answerText.setText("Reply is hazy, try again tomorrow");
+        answerText.setText(Predictions.get());
     }
 }
