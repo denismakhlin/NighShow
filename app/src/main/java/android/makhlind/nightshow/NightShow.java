@@ -39,6 +39,10 @@ public class NightShow extends AppCompatActivity {
         sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
+        acceleration = 0.0f;
+        currentAcceleration = SensorManager.GRAVITY_EARTH;
+        previousAcceleration = SensorManager.GRAVITY_EARTH;
+
         answerText = (TextView) findViewById(R.id.answerText);
         answerText.setText(Predictions.get().getPrediction());
     }
