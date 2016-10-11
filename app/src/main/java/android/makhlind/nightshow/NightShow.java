@@ -1,5 +1,6 @@
 package android.makhlind.nightshow;
 
+import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -35,10 +36,13 @@ public class NightShow extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_night_show);
 
+        sensorManager = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
+        accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+
         answerText = (TextView) findViewById(R.id.answerText);
         answerText.setText(Predictions.get().getPrediction());
     }
-    
+
     @Override
     protected void onResume() {
         super.onResume();
