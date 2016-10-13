@@ -39,6 +39,10 @@ public class NightShow extends AppCompatActivity {
             if(acceleration > 15) {
                 Toast toast = Toast.makeText(getApplication(), "Device has shaken", Toast.LENGTH_SHORT);
                 toast.show();
+
+                String nightShow = Predictions.get().getPrediction();
+                answerText.setText(nightShow);
+
                 mediaPlayer.start();
             }
         }
