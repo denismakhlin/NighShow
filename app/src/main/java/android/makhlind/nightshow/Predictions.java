@@ -12,10 +12,10 @@ public class Predictions {
 
     private Predictions() {
         answers = new String[] {
-            "Your wishes will come true.",
-                "Your wishes will NEVER come true.",
-                "yoooo",
-                "test"
+            "Paul MCcartney - October 27th 2016 - Forum",
+                "Jason Derulo - November 24th 2016 - Forum",
+                "Ringo Starr - December 15th 2016 - Staples Center",
+                "Lil Yachty - October 27th 2016 - Staples Center"
         };
     }
 

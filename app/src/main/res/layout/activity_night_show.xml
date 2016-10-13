@@ -8,15 +8,14 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/ball01"
-        android:background="#000"
-        />
+        android:background="@drawable/ball01"
+ />
 
     <TextView
         android:id="@+id/answerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#ffffff"
+        android:textColor="#ff0000"
         />
 
 </RelativeLayout>
